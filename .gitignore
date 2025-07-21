@@ -1,0 +1,52 @@
+# ===========================
+# General
+# ===========================
+.DS_Store
+Thumbs.db
+
+# ===========================
+# Node / Frontend (Next.js)
+# ===========================
+node_modules/
+.next/
+dist/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===========================
+# Python / Backend
+# ===========================
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+.venv/
+venv/
+env/
+ENV/
+
+# Chroma / Vector DB
+chrome_langchain_db/
+
+# Local environment
+.env
+
+# ===========================
+# VSCode / IDE
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===========================
+# System / OS files
+# ===========================
+ehthumbs.db
+Desktop.ini
