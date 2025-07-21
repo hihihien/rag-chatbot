@@ -14,7 +14,7 @@ export default function HomePage() {
     setAnswer('');
 
     try {
-      const res = await fetch('${process.env.NEXT_PUBLIC_API_URL}}/ask', {
+      const res = await fetch('${process.env.NEXT_PUBLIC_API_URL}/ask', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question }),
