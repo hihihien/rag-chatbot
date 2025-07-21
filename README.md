@@ -14,7 +14,7 @@ cd rag-chatbot
 ```bash
 cd backend
 python -m venv venv
-venv\Scripts\activate        # Use `source venv/bin/activate` on macOS/Linux
+venv\Scripts\activate     
 pip install -r requirements.txt
 
 # Start backend server
