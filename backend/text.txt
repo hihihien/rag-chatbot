@@ -1,0 +1,25 @@
+//to activate env
+.\venv\Scripts\Activate
+
+//deactivate
+
+
+// to start serve_api
+uvicorn serve_api:app --reload
+
+INFO:     Will watch for changes in these directories: ['/Users/hiengiang/RAG-Chatbot']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [15722] using WatchFiles
+INFO:     Started server process [15724]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:59299 - "GET / HTTP/1.1" 404 Not Found
+
+{"detail":"Not Found"}
+
+Test to run at:
+http://localhost:8000
+
+
+Test with
+curl -X POST http://localhost:8000/ask -H "Content-Type: application/json" -d '{"question": "Was ist das Ziel von MMI 02?"}'

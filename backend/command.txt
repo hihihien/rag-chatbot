@@ -1,0 +1,24 @@
+(venv) (base) hiengiang@cookie-the-snuggable RAG-Chatbot % rm -rf chrome_langchain_db/
+(venv) (base) hiengiang@cookie-the-snuggable RAG-Chatbot % python vector.py
+Loaded 51 clean module documents.
+Traceback (most recent call last):
+  File "/Users/hiengiang/RAG-Chatbot/vector.py", line 53, in <module>
+    vector_store.add_documents(documents=documents, ids=ids)
+  File "/Users/hiengiang/RAG-Chatbot/venv/lib/python3.11/site-packages/langchain_core/vectorstores/base.py", line 288, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hiengiang/RAG-Chatbot/venv/lib/python3.11/site-packages/langchain_chroma/vectorstores.py", line 527, in add_texts
+    embeddings = self._embedding_function.embed_documents(texts)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hiengiang/RAG-Chatbot/venv/lib/python3.11/site-packages/langchain_ollama/embeddings.py", line 265, in embed_documents
+    embedded_docs = self._client.embed(
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/hiengiang/RAG-Chatbot/venv/lib/python3.11/site-packages/ollama/_client.py", line 367, in embed
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/hiengiang/RAG-Chatbot/venv/lib/python3.11/site-packages/ollama/_client.py", line 180, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hiengiang/RAG-Chatbot/venv/lib/python3.11/site-packages/ollama/_client.py", line 126, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download

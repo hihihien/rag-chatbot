@@ -1,0 +1,13 @@
+fastapi[all]
+fastapi-cors
+uvicorn
+pydantic
+langchain
+ollama
+langchain-ollama
+langchain-chroma
+pandas
+chromadb
+numpy
+python-dotenv
+PyMuPDF
